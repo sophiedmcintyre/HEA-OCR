@@ -18,3 +18,4 @@ pip install PyPDF2
 
 ### Workflow
 
+![OCR Workflow](HEA OCR Workflow.png)
