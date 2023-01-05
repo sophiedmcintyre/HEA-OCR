@@ -30,3 +30,6 @@ file = "./BookTitle.pdf" # input file
 merger.write("BookTitle-OCR.pdf") #output file
 merger.close()
 ```
+
+### Citations
+This program was made with the help of a notebook on creating an OCR Workflow by Constellate (https://github.com/ithaka/tdm-notebooks/blob/4fd51b8dcd4eca40b2b9057dc4a569d786245d2e/ocr-workflow-1.ipynb)
