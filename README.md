@@ -1,7 +1,7 @@
 # HEA-OCR
 
 ### Purpose
-This program performs optical character recognition (OCR) on a PDF using the open-source Tesseract engine. It will specifically be used to OCR the Historic Education Archive (HEA) at James E. Walker Library. By OCR-ing these documents, we can provide better accessibility and open up more opportunities for textual analysis.
+This program (OCR_PDF.py) performs optical character recognition (OCR) on a PDF using the open-source Tesseract engine. It will specifically be used to OCR the Historic Education Archive (HEA) at James E. Walker Library. By OCR-ing these documents, we can provide better accessibility and open up more opportunities for textual analysis.
 
 ### Prerequisites
 - pdf2image (converts PDF into multiple Python Image Library (PIL) objects)
@@ -9,7 +9,7 @@ This program performs optical character recognition (OCR) on a PDF using the ope
 - PyPDF2 (merges the OCRed PDFs into one OCRed PDF)
 
 ### Installation
-*requires Python to be downloaded https://www.python.org/downloads/
+Note: requires Python to be downloaded https://www.python.org/downloads/
 ```bash
 pip install pdf2image
 pip install pytesseract
@@ -24,10 +24,12 @@ pip install PyPDF2
 ### Example
 Enter the filename that you would like to OCR and provide a different filename for the output file
 
+Note: the file variable below is the path of the input pdf. The path "./Book.pdf" means that the PDF (Book.pdf) is in the same directory as the program (OCR_PDF.py).
+
 ```python
-file = "./BookTitle.pdf" # input file
+file = "./Book.pdf" # input file
 ...
-merger.write("BookTitle-OCR.pdf") #output file
+merger.write("Book-OCR.pdf") #output file
 merger.close()
 ```
 
