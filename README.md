@@ -9,6 +9,7 @@ This program performs optical character recognition (OCR) on a PDF using the ope
 - PyPDF2 (merges the OCRed PDFs into one OCRed PDF)
 
 ### Installation
+*requires Python to be downloaded https://www.python.org/downloads/
 ```bash
 pip install pdf2image
 pip install pytesseract
@@ -18,4 +19,14 @@ pip install PyPDF2
 
 ### Workflow
 
-![OCR Workflow](HEA OCR Workflow.png)
+![OCR Workflow](https://github.com/sophiedmcintyre/HEA-OCR/blob/25f981dc710a3690a08bb9dbfaa77ab12ebd818f/HEA%20OCR%20Workflow.png)
+
+### Example
+Enter the filename that you would like to OCR and provide a different filename for the output file
+
+```python
+file = "./BookTitle.pdf" # input file
+...
+merger.write("BookTitle-OCR.pdf") #output file
+merger.close()
+```
