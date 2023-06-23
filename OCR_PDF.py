@@ -20,14 +20,16 @@ def ocr_func(fileName):
 
     # Initiates merger
     merger = PdfMerger()
-
+    
     pdfs = []
+
+    print("About to do Tesseract")
     # Tesseract OCRs each image and converts it to a pdf
     # Each pdf is appended to a list
     for i, page in enumerate(PIL_objects):
         pdf = pytesseract.image_to_pdf_or_hocr(PIL_objects[i], extension='pdf')
         pdfs.append(pdf)
-
+    print("Merging files into one pdf")
     # Merges each PDF from the list into one PDF
     for page in pdfs:
         with open(f'{fileName}-Page.pdf', 'w+b') as f:
