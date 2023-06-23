@@ -37,7 +37,7 @@ def ocr_func(fileName):
             merger.append(f)
         
     # Output file
-    merger.write("Book-OCR.pdf")
+    merger.write("/mnt/usershare/Needs Subcollection/" + fileName + "-OCR.pdf")
     merger.close()
 
         
